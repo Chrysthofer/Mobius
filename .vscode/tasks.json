@@ -1,0 +1,74 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-all",
+            "dependsOn": [
+                "clear-header-files",
+                "generate-parser",
+                "generate-lexer",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "clear-header-and-lex-files",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "clear_files.bat"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        
+        {
+            "label": "generate-parser",
+            "type": "shell",
+            "command": "bison",
+            "args": [
+                "-d",
+                "-o",
+                "C:\\Users\\chrys\\Desktop\\testeComp\\Headers\\c2asm.tab.c",
+                "C:\\Users\\chrys\\Desktop\\testeComp\\Source\\c2asm.y"
+            ],
+            
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+
+        {
+            "label": "generate-lexer",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "flex -o C:\\Users\\chrys\\Desktop\\testeComp\\Source\\lex.yy.c C:\\Users\\chrys\\Desktop\\testeComp\\Source\\c2asm.l"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}
