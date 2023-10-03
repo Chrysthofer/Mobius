@@ -33,8 +33,5 @@ $(TARGET): $(OBJECTS)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(OBJ_DIR)/labels.o: $(SRC_DIR)/labels.c
-    $(CC) $(CFLAGS) -c -I$(SRC_DIR) $< -o $@
-
 clean:
-	rm -f $(OBJECTS) $(TARGET)
+	rm -f $(OBJECTS)

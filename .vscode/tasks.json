@@ -31,7 +31,8 @@
             "command": "cmd.exe",
             "args": [
                 "/c",
-                "clear_files.bat"
+                "del /q \"C:\\Users\\chrys\\Desktop\\testeComp\\Headers\\c2asm.tab.c\"",
+                "& del /q \"C:\\Users\\chrys\\Desktop\\testeComp\\Headers\\c2asm.tab.h\""
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
