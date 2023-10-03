@@ -4,7 +4,19 @@
         {
             "label": "build-all",
             "dependsOn": [
-                "clear-header-files",
+                "clear-header-and-lex-files",
+                "generate-parser",
+                "generate-lexer",
+                "build-with-make"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "bison-flex",
+            "dependsOn": [
                 "generate-parser",
                 "generate-lexer",
             ],
@@ -33,7 +45,6 @@
                 "panel": "new"
             }
         },
-        
         {
             "label": "generate-parser",
             "type": "shell",
@@ -44,7 +55,6 @@
                 "C:\\Users\\chrys\\Desktop\\testeComp\\Headers\\c2asm.tab.c",
                 "C:\\Users\\chrys\\Desktop\\testeComp\\Source\\c2asm.y"
             ],
-            
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -57,7 +67,6 @@
                 "panel": "new"
             }
         },
-
         {
             "label": "generate-lexer",
             "type": "shell",
@@ -68,6 +77,23 @@
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "build-with-make",
+            "type": "shell",
+            "command": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": "$gcc", // Opcional: para reconhecimento de erros do GCC
+            "options": {
+                "cwd": "${workspaceFolder}/.vscode" // Caminho para a pasta .vscode do projeto
             }
         }
     ]
