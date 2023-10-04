@@ -1,7 +1,11 @@
 # Diretórios
-SRC_DIR = "C:\Users\chrys\Desktop\testeComp\Source"
-OBJ_DIR = "C:\Users\chrys\Desktop\testeComp\obj\Debug"
-BIN_DIR = "C:\Users\chrys\Desktop\testeComp\bin\Debug"
+SRC_DIR = Source
+OBJ_DIR = obj\Debug
+BIN_DIR = bin\Debug
+HEADER_DIR = Headers
+
+clean:
+	rm -f $(OBJECTS)
 
 # Nome do seu executável
 TARGET = $(BIN_DIR)/myccomp.exe
@@ -10,11 +14,10 @@ TARGET = $(BIN_DIR)/myccomp.exe
 CC = gcc
 
 # Opções de compilação
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -I$(HEADER_DIR)
 
 # Lista de arquivos fonte por nome
 SOURCE_FILES = labels.c lex.yy.c t2t.c teste.c variaveis.c y.tab.c c2asm.tab.c
-
 
 # Gere a lista completa de arquivos fonte com base nos nomes especificados
 SOURCES = $(addprefix $(SRC_DIR)/,$(SOURCE_FILES))
@@ -23,7 +26,7 @@ SOURCES = $(addprefix $(SRC_DIR)/,$(SOURCE_FILES))
 OBJECTS = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SOURCES))
 
 # Cria os diretórios de objetos e destino, se não existirem
-$(shell mkdir -p $(OBJ_DIR) $(BIN_DIR))
+$(shell mkdir $(OBJ_DIR) $(BIN_DIR))
 
 all: $(TARGET)
 
@@ -33,5 +36,3 @@ $(TARGET): $(OBJECTS)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-clean:
-	rm -f $(OBJECTS)

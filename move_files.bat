@@ -1,0 +1,6 @@
+@echo off
+echo Moving c2asm.tab.c to Source folder...
+move "%~dp0Headers\c2asm.tab.c" "%~dp0Source\c2asm.tab.c"
+echo Moving c2asm.tab.h to Headers folder...
+move "%~dp0Headers\c2asm.tab.h" "%~dp0Headers\c2asm.tab.h"
+echo Files moved successfully!

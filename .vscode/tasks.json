@@ -31,12 +31,9 @@
             "command": "cmd.exe",
             "args": [
                 "/c",
-                "del /q \"C:\\Users\\chrys\\Desktop\\testeComp\\Headers\\c2asm.tab.c\"",
-                "& del /q \"C:\\Users\\chrys\\Desktop\\testeComp\\Headers\\c2asm.tab.h\""
+                "del /q \"${workspaceFolder}\\Source\\c2asm.tab.c\"",
+                "& del /q \"${workspaceFolder}\\Headers\\c2asm.tab.h\""
             ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -51,14 +48,12 @@
             "type": "shell",
             "command": "bison",
             "args": [
+                "-y",
                 "-d",
                 "-o",
-                "C:\\Users\\chrys\\Desktop\\testeComp\\Headers\\c2asm.tab.c",
-                "C:\\Users\\chrys\\Desktop\\testeComp\\Source\\c2asm.y"
+                "${workspaceFolder}\\Headers\\c2asm.tab.c",
+                "${workspaceFolder}\\Source\\c2asm.y"
             ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -69,12 +64,26 @@
             }
         },
         {
+            "label": "move_files",
+            "type": "shell",
+            "command": "${workspaceFolder}\\move_files.bat", // Caminho para o arquivo .bat
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "dependsOn": "generate-parser" // Dependente da tarefa generate-parser
+        },
+        {
             "label": "generate-lexer",
             "type": "shell",
             "command": "cmd.exe",
             "args": [
                 "/c",
-                "flex -o C:\\Users\\chrys\\Desktop\\testeComp\\Source\\lex.yy.c C:\\Users\\chrys\\Desktop\\testeComp\\Source\\c2asm.l"
+                "flex -o \"${workspaceFolder}\\Source\\lex.yy.c\" \"${workspaceFolder}\\Source\\c2asm.l\""
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -92,7 +101,7 @@
                 "reveal": "always",
                 "panel": "new"
             },
-            "problemMatcher": "$gcc", // Opcional: para reconhecimento de erros do GCC
+            "problemMatcher": "$gcc", // Reconhecimento de erros do GCC
             "options": {
                 "cwd": "${workspaceFolder}/.vscode" // Caminho para a pasta .vscode do projeto
             }
