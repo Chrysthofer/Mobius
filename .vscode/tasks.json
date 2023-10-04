@@ -32,7 +32,8 @@
             "args": [
                 "/c",
                 "del /q \"${workspaceFolder}\\Source\\c2asm.tab.c\"",
-                "& del /q \"${workspaceFolder}\\Headers\\c2asm.tab.h\""
+                "& del /q \"${workspaceFolder}\\Headers\\c2asm.tab.h\"",
+                "& del /q \"${workspaceFolder}\\Source\\lex.yy.c\""
             ],
             "group": {
                 "kind": "build",
