@@ -67,7 +67,7 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 189 of yacc.c  */
-#line 1 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 1 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
 
 
 #include <stdio.h>
@@ -120,7 +120,7 @@ void  exec_out2  (int et);
 
 
 /* Line 189 of yacc.c  */
-#line 124 "C:\\Users\\chrys\\Desktop\\helsinki\\Headers\\c2asm.tab.c"
+#line 124 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -234,7 +234,7 @@ typedef int YYSTYPE;
 
 
 /* Line 264 of yacc.c  */
-#line 238 "C:\\Users\\chrys\\Desktop\\helsinki\\Headers\\c2asm.tab.c"
+#line 238 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.tab.c"
 
 #ifdef short
 # undef short
@@ -1758,595 +1758,595 @@ yyreduce:
         case 7:
 
 /* Line 1464 of yacc.c  */
-#line 88 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 88 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#PRNAME %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 8:
 
 /* Line 1464 of yacc.c  */
-#line 89 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 89 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#DIRNAM %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 9:
 
 /* Line 1464 of yacc.c  */
-#line 90 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 90 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#DATYPE %s\n", v_name[(yyvsp[(2) - (2)])]); prtype = atoi(v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 10:
 
 /* Line 1464 of yacc.c  */
-#line 91 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 91 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#NUBITS %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 11:
 
 /* Line 1464 of yacc.c  */
-#line 92 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 92 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#NBMANT %s\n", v_name[(yyvsp[(2) - (2)])]); nbmant = atoi(v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 12:
 
 /* Line 1464 of yacc.c  */
-#line 93 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 93 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#NBEXPO %s\n", v_name[(yyvsp[(2) - (2)])]); nbexpo = atoi(v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 13:
 
 /* Line 1464 of yacc.c  */
-#line 94 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 94 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#NDSTAC %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 14:
 
 /* Line 1464 of yacc.c  */
-#line 95 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 95 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#SDEPTH %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 15:
 
 /* Line 1464 of yacc.c  */
-#line 96 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 96 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#NUIOIN %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 16:
 
 /* Line 1464 of yacc.c  */
-#line 97 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 97 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#NUIOOU %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 17:
 
 /* Line 1464 of yacc.c  */
-#line 98 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 98 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "#NUGAIN %s\n", v_name[(yyvsp[(2) - (2)])]);}
     break;
 
   case 19:
 
 /* Line 1464 of yacc.c  */
-#line 103 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 103 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_var((yyvsp[(2) - (7)]),(yyvsp[(4) - (7)]),(yyvsp[(6) - (7)])); v_asgn[(yyvsp[(2) - (7)])] = 1;}
     break;
 
   case 22:
 
 /* Line 1464 of yacc.c  */
-#line 108 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 108 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_var((yyvsp[(1) - (1)]),-1,-1);}
     break;
 
   case 23:
 
 /* Line 1464 of yacc.c  */
-#line 109 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 109 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_var((yyvsp[(1) - (4)]),(yyvsp[(3) - (4)]),-1); v_asgn[(yyvsp[(1) - (4)])] = 1;}
     break;
 
   case 24:
 
 /* Line 1464 of yacc.c  */
-#line 113 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 113 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_fun((yyvsp[(1) - (3)]),(yyvsp[(2) - (3)]));}
     break;
 
   case 25:
 
 /* Line 1464 of yacc.c  */
-#line 114 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 114 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "SET %s\n", v_name[(yyvsp[(5) - (6)])]); acc_id = (yyvsp[(5) - (6)]);}
     break;
 
   case 26:
 
 /* Line 1464 of yacc.c  */
-#line 115 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 115 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {func_ret((yyvsp[(2) - (10)]));}
     break;
 
   case 27:
 
 /* Line 1464 of yacc.c  */
-#line 116 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 116 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_fun((yyvsp[(1) - (4)]),(yyvsp[(2) - (4)]));}
     break;
 
   case 28:
 
 /* Line 1464 of yacc.c  */
-#line 117 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 117 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {func_ret((yyvsp[(2) - (8)]));}
     break;
 
   case 29:
 
 /* Line 1464 of yacc.c  */
-#line 120 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 120 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = declar_par((yyvsp[(1) - (2)]),(yyvsp[(2) - (2)]));}
     break;
 
   case 30:
 
 /* Line 1464 of yacc.c  */
-#line 121 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 121 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {fprintf(f_asm, "SETP %s\n", v_name[(yyvsp[(3) - (3)])]);}
     break;
 
   case 45:
 
 /* Line 1464 of yacc.c  */
-#line 141 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 141 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     { fun_id2 = (yyvsp[(1) - (2)]);}
     break;
 
   case 46:
 
 /* Line 1464 of yacc.c  */
-#line 142 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 142 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {     vcall((yyvsp[(1) - (6)]));}
     break;
 
   case 47:
 
 /* Line 1464 of yacc.c  */
-#line 143 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 143 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     { fun_id2 = (yyvsp[(1) - (2)]);}
     break;
 
   case 48:
 
 /* Line 1464 of yacc.c  */
-#line 144 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 144 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = fcall((yyvsp[(1) - (5)]));}
     break;
 
   case 49:
 
 /* Line 1464 of yacc.c  */
-#line 145 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 145 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_ret((yyvsp[(2) - (3)]));}
     break;
 
   case 51:
 
 /* Line 1464 of yacc.c  */
-#line 148 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 148 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {p_test = get_type((yyvsp[(1) - (1)]));             par_check((yyvsp[(1) - (1)]));}
     break;
 
   case 52:
 
 /* Line 1464 of yacc.c  */
-#line 149 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 149 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {p_test = p_test*10 + get_type((yyvsp[(3) - (3)])); par_check((yyvsp[(3) - (3)]));}
     break;
 
   case 53:
 
 /* Line 1464 of yacc.c  */
-#line 153 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 153 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {exec_out1((yyvsp[(3) - (4)]));     }
     break;
 
   case 54:
 
 /* Line 1464 of yacc.c  */
-#line 154 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 154 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {exec_out2((yyvsp[(6) - (8)]));     }
     break;
 
   case 55:
 
 /* Line 1464 of yacc.c  */
-#line 155 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 155 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = exec_in((yyvsp[(3) - (4)]));  }
     break;
 
   case 56:
 
 /* Line 1464 of yacc.c  */
-#line 156 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 156 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = exec_abs((yyvsp[(3) - (4)])); }
     break;
 
   case 57:
 
 /* Line 1464 of yacc.c  */
-#line 157 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 157 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {exec_sign1((yyvsp[(3) - (4)]));     }
     break;
 
   case 58:
 
 /* Line 1464 of yacc.c  */
-#line 158 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 158 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = exec_sign2((yyvsp[(6) - (7)]));}
     break;
 
   case 59:
 
 /* Line 1464 of yacc.c  */
-#line 162 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 162 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {acc_id = -1; fprintf(f_asm, "@L%delse ", pop_lab());}
     break;
 
   case 60:
 
 /* Line 1464 of yacc.c  */
-#line 163 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 163 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {acc_id = -1; fprintf(f_asm, "@L%dend " , pop_lab());}
     break;
 
   case 62:
 
 /* Line 1464 of yacc.c  */
-#line 166 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 166 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {acc_id = -1; fprintf(f_asm, "@L%dend ", pop_lab());}
     break;
 
   case 63:
 
 /* Line 1464 of yacc.c  */
-#line 167 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 167 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {acc_id = -1; fprintf(f_asm, "JMP L%dend\n@L%delse ", get_lab(), get_lab());}
     break;
 
   case 64:
 
 /* Line 1464 of yacc.c  */
-#line 169 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 169 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {load_check((yyvsp[(3) - (4)]), 0); fprintf(f_asm, "JZ L%delse\n", push_lab()); acc_ok = 0; acc_id = -1;}
     break;
 
   case 65:
 
 /* Line 1464 of yacc.c  */
-#line 173 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 173 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {acc_id = -1; fprintf(f_asm, "JMP L%d\n@L%dend ", pop_lab(), get_lab());}
     break;
 
   case 66:
 
 /* Line 1464 of yacc.c  */
-#line 174 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 174 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {acc_id = -1; fprintf(f_asm, "JMP L%d\n@L%dend ", pop_lab(), get_lab());}
     break;
 
   case 67:
 
 /* Line 1464 of yacc.c  */
-#line 176 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 176 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {acc_id = -1; fprintf(f_asm, "@L%d ", push_lab());}
     break;
 
   case 68:
 
 /* Line 1464 of yacc.c  */
-#line 177 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 177 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {load_check((yyvsp[(4) - (5)]), 0); fprintf(f_asm, "JZ L%dend\n", get_lab()); acc_ok = 0;}
     break;
 
   case 70:
 
 /* Line 1464 of yacc.c  */
-#line 182 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 182 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_var((yyvsp[(2) - (5)]),-1,-1); var_set((yyvsp[(2) - (5)]),(yyvsp[(4) - (5)]),0,0);}
     break;
 
   case 71:
 
 /* Line 1464 of yacc.c  */
-#line 183 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 183 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {declar_var((yyvsp[(2) - (5)]),-1,-1); var_set((yyvsp[(2) - (5)]),(yyvsp[(4) - (5)]),0,1);}
     break;
 
   case 72:
 
 /* Line 1464 of yacc.c  */
-#line 190 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 190 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {var_set((yyvsp[(1) - (4)]),(yyvsp[(3) - (4)]),0,0);}
     break;
 
   case 73:
 
 /* Line 1464 of yacc.c  */
-#line 191 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 191 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {var_set((yyvsp[(1) - (4)]),(yyvsp[(3) - (4)]),0,1);}
     break;
 
   case 74:
 
 /* Line 1464 of yacc.c  */
-#line 192 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 192 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {var_set((yyvsp[(1) - (4)]),(yyvsp[(3) - (4)]),0,2);}
     break;
 
   case 75:
 
 /* Line 1464 of yacc.c  */
-#line 193 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 193 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {array_check((yyvsp[(1) - (5)]),(yyvsp[(3) - (5)]));}
     break;
 
   case 76:
 
 /* Line 1464 of yacc.c  */
-#line 194 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 194 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {var_set((yyvsp[(1) - (8)]),(yyvsp[(7) - (8)]),1,0);}
     break;
 
   case 77:
 
 /* Line 1464 of yacc.c  */
-#line 200 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 200 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {                    (yyval) = load((yyvsp[(1) - (1)]),1,1         ,0);}
     break;
 
   case 78:
 
 /* Line 1464 of yacc.c  */
-#line 201 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 201 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = neg((yyvsp[(2) - (2)]));}
     break;
 
   case 80:
 
 /* Line 1464 of yacc.c  */
-#line 204 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 204 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {                    (yyval) = load((yyvsp[(1) - (1)]),1,2         ,0);}
     break;
 
   case 81:
 
 /* Line 1464 of yacc.c  */
-#line 205 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 205 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {                    (yyval) = load((yyvsp[(1) - (1)]),0,v_type[(yyvsp[(1) - (1)])],0);}
     break;
 
   case 82:
 
 /* Line 1464 of yacc.c  */
-#line 206 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 206 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {array_check((yyvsp[(1) - (4)]),(yyvsp[(3) - (4)])); (yyval) = load((yyvsp[(1) - (4)]),0,v_type[(yyvsp[(1) - (4)])],1);}
     break;
 
   case 83:
 
 /* Line 1464 of yacc.c  */
-#line 207 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 207 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) =     (yyvsp[(1) - (1)])*OFST;}
     break;
 
   case 84:
 
 /* Line 1464 of yacc.c  */
-#line 208 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 208 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) =     (yyvsp[(1) - (1)])*OFST;}
     break;
 
   case 85:
 
 /* Line 1464 of yacc.c  */
-#line 209 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 209 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) =     (yyvsp[(1) - (1)])*OFST;}
     break;
 
   case 86:
 
 /* Line 1464 of yacc.c  */
-#line 210 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 210 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) =     (yyvsp[(1) - (1)])*OFST;}
     break;
 
   case 87:
 
 /* Line 1464 of yacc.c  */
-#line 211 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 211 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) =         (yyvsp[(2) - (3)]) ;}
     break;
 
   case 88:
 
 /* Line 1464 of yacc.c  */
-#line 212 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 212 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) =         (yyvsp[(2) - (2)]) ;}
     break;
 
   case 89:
 
 /* Line 1464 of yacc.c  */
-#line 213 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 213 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = negacao((yyvsp[(2) - (2)]));}
     break;
 
   case 90:
 
 /* Line 1464 of yacc.c  */
-#line 214 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 214 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(2) - (2)]), 0, "!"  , "LINV", 1);}
     break;
 
   case 91:
 
 /* Line 1464 of yacc.c  */
-#line 215 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 215 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(2) - (2)]), 0, "~"  ,  "INV", 0);}
     break;
 
   case 92:
 
 /* Line 1464 of yacc.c  */
-#line 216 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 216 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "%"  ,  "MOD", 0);}
     break;
 
   case 93:
 
 /* Line 1464 of yacc.c  */
-#line 217 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 217 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "<<" ,  "SHL", 0);}
     break;
 
   case 94:
 
 /* Line 1464 of yacc.c  */
-#line 218 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 218 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), ">>" ,  "SHR", 0);}
     break;
 
   case 95:
 
 /* Line 1464 of yacc.c  */
-#line 219 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 219 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), ">>>",  "SRS", 0);}
     break;
 
   case 96:
 
 /* Line 1464 of yacc.c  */
-#line 220 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 220 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "&"  ,  "AND", 0);}
     break;
 
   case 97:
 
 /* Line 1464 of yacc.c  */
-#line 221 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 221 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "|"  ,  "OR" , 0);}
     break;
 
   case 98:
 
 /* Line 1464 of yacc.c  */
-#line 222 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 222 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "^"  ,  "XOR", 0);}
     break;
 
   case 99:
 
 /* Line 1464 of yacc.c  */
-#line 223 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 223 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "&&" , "LAND", 1);}
     break;
 
   case 100:
 
 /* Line 1464 of yacc.c  */
-#line 224 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 224 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "||" , "LOR" , 1);}
     break;
 
   case 101:
 
 /* Line 1464 of yacc.c  */
-#line 225 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 225 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "MLT", "CALL float_mult"                             , &fmlt);}
     break;
 
   case 102:
 
 /* Line 1464 of yacc.c  */
-#line 226 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 226 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "DIV", "CALL float_div"                              , &fdiv);}
     break;
 
   case 103:
 
 /* Line 1464 of yacc.c  */
-#line 227 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 227 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "ADD", "CALL denorm\nCALL float_add"                 , &fadd);}
     break;
 
   case 104:
 
 /* Line 1464 of yacc.c  */
-#line 228 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 228 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {int r=negacao((yyvsp[(3) - (3)])); (yyval) = operacoes((yyvsp[(1) - (3)]), r, "ADD", "CALL denorm\nCALL float_add"                 , &fadd);}
     break;
 
   case 105:
 
 /* Line 1464 of yacc.c  */
-#line 229 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 229 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {     operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "LES", "CALL denorm\nLOAD float_aux3\nLES float_aux1", &fgen); (yyval) = OFST;}
     break;
 
   case 106:
 
 /* Line 1464 of yacc.c  */
-#line 230 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 230 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {     operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "GRE", "CALL denorm\nLOAD float_aux3\nGRE float_aux1", &fgen); (yyval) = OFST;}
     break;
 
   case 107:
 
 /* Line 1464 of yacc.c  */
-#line 231 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 231 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {     operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "LES", "CALL denorm\nLOAD float_aux3\nLES float_aux1", &fgen); (yyval) = OFST; fprintf(f_asm, "LINV\n");}
     break;
 
   case 108:
 
 /* Line 1464 of yacc.c  */
-#line 232 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 232 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {     operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "GRE", "CALL denorm\nLOAD float_aux3\nGRE float_aux1", &fgen); (yyval) = OFST; fprintf(f_asm, "LINV\n");}
     break;
 
   case 109:
 
 /* Line 1464 of yacc.c  */
-#line 233 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 233 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {     operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "EQU", "CALL denorm\nLOAD float_aux3\nEQU float_aux1", &fgen); (yyval) = OFST;}
     break;
 
   case 110:
 
 /* Line 1464 of yacc.c  */
-#line 234 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 234 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {     operacoes((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]), "EQU", "CALL denorm\nLOAD float_aux3\nEQU float_aux1", &fgen); (yyval) = OFST; fprintf(f_asm, "LINV\n");}
     break;
 
   case 111:
 
 /* Line 1464 of yacc.c  */
-#line 235 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 235 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
     {(yyval) = int_oper ((yyvsp[(2) - (2)]), 0, "/>"  , "NORM", 0);}
     break;
 
 
 
 /* Line 1464 of yacc.c  */
-#line 2350 "C:\\Users\\chrys\\Desktop\\helsinki\\Headers\\c2asm.tab.c"
+#line 2350 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -2558,7 +2558,7 @@ yyreturn:
 
 
 /* Line 1684 of yacc.c  */
-#line 239 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.y"
+#line 239 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.y"
 
 
 int main(int argc, char *argv[])

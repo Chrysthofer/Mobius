@@ -5,7 +5,7 @@
             "label": "build-all",
             "dependsOn": [
                 "clear-header-and-lex-files",
-                "generate-parser",
+                "bison-flex",
                 "generate-lexer",
                 "build-with-make"
             ],
@@ -17,8 +17,8 @@
         {
             "label": "bison-flex",
             "dependsOn": [
-                "generate-parser",
-                "generate-lexer",
+                "clear-header-and-lex-files",
+                "generate-parser"
             ],
             "group": {
                 "kind": "build",
@@ -51,9 +51,9 @@
             "args": [
                 "-y",
                 "-d",
-                "-o",
-                "${workspaceFolder}\\Headers\\c2asm.tab.c",
-                "${workspaceFolder}\\Source\\c2asm.y"
+                "--output=${workspaceFolder}/Source/c2asm.tab.c", // Caminho para o arquivo .c de saída
+                "--defines=${workspaceFolder}/Headers/c2asm.tab.h", // Caminho para o arquivo .h de saída
+                "${workspaceFolder}/Source/c2asm.y" // Caminho para o arquivo de entrada .y
             ],
             "group": {
                 "kind": "build",
@@ -64,20 +64,7 @@
                 "panel": "new"
             }
         },
-        {
-            "label": "move_files",
-            "type": "shell",
-            "command": "${workspaceFolder}\\move_files.bat", // Caminho para o arquivo .bat
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            },
-            "dependsOn": "generate-parser" // Dependente da tarefa generate-parser
-        },
+        
         {
             "label": "generate-lexer",
             "type": "shell",
@@ -88,7 +75,8 @@
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
-            }
+            },
+            "dependsOn": "bison-flex"
         },
         {
             "label": "build-with-make",
@@ -105,7 +93,8 @@
             "problemMatcher": "$gcc", // Reconhecimento de erros do GCC
             "options": {
                 "cwd": "${workspaceFolder}/.vscode" // Caminho para a pasta .vscode do projeto
-            }
+            },
+            "dependsOn": "move_files"
         }
     ]
 }
