@@ -5,6 +5,7 @@
             "label": "build-all",
             "dependsOn": [
                 "clear-header-and-lex-files",
+                "clean-obj",
                 "bison-flex",
                 "generate-lexer",
                 "build-with-make"
@@ -31,8 +32,8 @@
             "command": "cmd.exe",
             "args": [
                 "/c",
-                "del /q \"${workspaceFolder}\\Source\\c2asm.tab.c\"",
-                "& del /q \"${workspaceFolder}\\Headers\\c2asm.tab.h\"",
+                "del /q \"${workspaceFolder}\\Source\\y.tab.c\"",
+                "& del /q \"${workspaceFolder}\\Headers\\y.tab.h\"",
                 "& del /q \"${workspaceFolder}\\Source\\lex.yy.c\""
             ],
             "group": {
@@ -45,14 +46,27 @@
             }
         },
         {
+            "label": "clean-obj",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "del /q \"${workspaceFolder}\\obj\\Debug\\*.o\""
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
             "label": "generate-parser",
             "type": "shell",
             "command": "bison",
             "args": [
                 "-y",
                 "-d",
-                "--output=${workspaceFolder}/Source/c2asm.tab.c", // Caminho para o arquivo .c de saída
-                "--defines=${workspaceFolder}/Headers/c2asm.tab.h", // Caminho para o arquivo .h de saída
+                "--output=${workspaceFolder}/Source/y.tab.c", // Caminho para o arquivo .c de saída
+                "--defines=${workspaceFolder}/Headers/y.tab.h", // Caminho para o arquivo .h de saída
                 "${workspaceFolder}/Source/c2asm.y" // Caminho para o arquivo de entrada .y
             ],
             "group": {
@@ -64,7 +78,6 @@
                 "panel": "new"
             }
         },
-        
         {
             "label": "generate-lexer",
             "type": "shell",

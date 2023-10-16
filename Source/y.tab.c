@@ -120,7 +120,7 @@ void  exec_out2  (int et);
 
 
 /* Line 189 of yacc.c  */
-#line 124 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.tab.c"
+#line 124 "C:\\Users\\chrys\\Desktop\\helsinki/Source/y.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -234,7 +234,7 @@ typedef int YYSTYPE;
 
 
 /* Line 264 of yacc.c  */
-#line 238 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.tab.c"
+#line 238 "C:\\Users\\chrys\\Desktop\\helsinki/Source/y.tab.c"
 
 #ifdef short
 # undef short
@@ -2346,7 +2346,7 @@ yyreduce:
 
 
 /* Line 1464 of yacc.c  */
-#line 2350 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.tab.c"
+#line 2350 "C:\\Users\\chrys\\Desktop\\helsinki/Source/y.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
