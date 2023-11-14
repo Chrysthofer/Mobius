@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 #line 2 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\lex.yy.c"
 
 #line 4 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\lex.yy.c"
-=======
-#line 2 "C:\\Users\\chrys\\Desktop\\helsinki/Source/lex.yy.c"
-
-#line 4 "C:\\Users\\chrys\\Desktop\\helsinki/Source/lex.yy.c"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 
 #define  YY_INT_ALIGNED short int
 
@@ -555,13 +549,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-<<<<<<< HEAD
 #line 1 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
 #line 2 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 1 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
-#line 2 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 #include <string.h>
 #include "y.tab.h"
 #include "variaveis.h"
@@ -569,11 +558,7 @@ char *yytext;
 
 void yyerror(char *);
 
-<<<<<<< HEAD
 #line 562 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\lex.yy.c"
-=======
-#line 562 "C:\\Users\\chrys\\Desktop\\helsinki/Source/lex.yy.c"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 
 #define INITIAL 0
 
@@ -760,17 +745,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-<<<<<<< HEAD
 #line 14 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
 
 
 #line 752 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\lex.yy.c"
-=======
-#line 14 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
-
-
-#line 752 "C:\\Users\\chrys\\Desktop\\helsinki/Source/lex.yy.c"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 
 	if ( !(yy_init) )
 		{
@@ -855,210 +833,118 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 16 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 16 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return PRNAME;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 17 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 17 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return DIRNAM;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 18 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 18 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return DATYPE;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 19 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 19 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return NUBITS;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 20 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 20 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return NBMANT;
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 21 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 21 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return NBEXPO;
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 22 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 22 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return NDSTAC;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 23 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 23 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return SDEPTH;
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 24 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 24 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return NUIOIN;
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 25 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 25 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return NUIOOU;
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 26 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 26 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return NUGAIN;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 28 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 28 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {fgen = 1; type_tmp = 2; yylval = 2; return TYPE;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 29 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 29 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {type_tmp = 1; yylval = 1; return TYPE;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 30 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 30 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {              yylval = 0; return TYPE;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 32 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 32 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return IN;
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 33 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 33 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return OUT;
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 34 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 34 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return ABS;
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 35 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 35 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return SIGN;
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 36 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 36 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return RETURN;
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 37 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 37 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return WHILE;
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 38 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 38 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return IF;
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 39 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 39 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return ELSE;
 	YY_BREAK
 case 23:
 /* rule 23 can match eol */
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 41 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 41 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {
                               if (find_var(yytext) == -1) add_var(yytext);
                               yylval = find_var(yytext);
@@ -1067,11 +953,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 47 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 47 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {
                               char var_name[64];
                               if (find_var(yytext) == -1)
@@ -1090,11 +972,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 63 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 63 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {
                               if (find_var(yytext) == -1) add_var(yytext);
                               yylval = find_var(yytext);
@@ -1103,11 +981,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 69 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 69 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {
                               if (find_var(yytext) == -1) add_var(yytext);
                               yylval = find_var(yytext);
@@ -1117,163 +991,92 @@ YY_RULE_SETUP
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 76 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 76 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return *yytext;
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 78 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 78 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return  SHIFTL;
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 79 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 79 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return  SHIFTR;
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 80 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 80 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return SSHIFTR;
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 81 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 81 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return   GREQU;
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 82 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 82 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return   LESEQ;
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 83 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 83 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return     EQU;
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 84 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 84 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return     DIF;
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 85 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 85 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return    LAND;
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 86 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 86 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return     LOR;
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 87 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 87 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 return    NORM;
 	YY_BREAK
 case 38:
 /* rule 38 can match eol */
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 89 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 89 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 line_num++;
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 91 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 91 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 ;       /* ignore whitespace   */
 	YY_BREAK
 case 40:
 /* rule 40 can match eol */
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 92 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 92 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 ;       /* comentario em bloco */
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 93 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 93 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 ;       /* comentario em linha */
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 95 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 95 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 {yyerror("");}
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-<<<<<<< HEAD
 #line 96 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
 ECHO;
 	YY_BREAK
 #line 1080 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\lex.yy.c"
-=======
-#line 96 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
-ECHO;
-	YY_BREAK
-#line 1080 "C:\\Users\\chrys\\Desktop\\helsinki/Source/lex.yy.c"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2271,11 +2074,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-<<<<<<< HEAD
 #line 96 "C:\\Users\\chrys\\Desktop\\helsinki\\Source\\c2asm.l"
-=======
-#line 96 "C:\\Users\\chrys\\Desktop\\helsinki/Source/c2asm.l"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 
 
 

@@ -2,7 +2,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-<<<<<<< HEAD
             "label": "clean-files",
             "command": "cmd",
             "args": [
@@ -14,16 +13,6 @@
                 "${workspaceFolder}\\Source\\y.tab.c",
                 "${workspaceFolder}\\Source\\lex.yy.c",
                 "${workspaceFolder}\\Headers\\y.tab.h",
-=======
-            "label": "build-all",
-            "dependsOn": [
-                "check-file1",
-                "check-file2",
-                "check-file3",
-                "generate-lex-yy-c",
-                "generate-y-tab",
-                "build-with-make"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
             ],
             "group": {
                 "kind": "build",
@@ -31,7 +20,6 @@
             }
         },
         {
-<<<<<<< HEAD
             "label": "lex-yacc",
             "command": "cmd",
             "args": [
@@ -50,91 +38,10 @@
                 "move",
                 "${workspaceFolder}\\Source\\y.tab.h",
                 "${workspaceFolder}\\Headers"
-=======
-            "label": "check-file1",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}\\.vscode\\check_files.py",
-                "${workspaceFolder}\\Source\\lex.yy.c"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
-        },
-        {
-            "label": "check-file2",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}\\.vscode\\check_files.py",
-                "${workspaceFolder}\\Headers\\y.tab.h"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
-        },
-        {
-            "label": "check-file3",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}\\.vscode\\check_files.py",
-                "${workspaceFolder}\\Source\\y.tab.c"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
-        },
-        {
-            "label": "generate-lex-yy-c",
-            "type": "shell",
-            "command": "flex",
-            "args": [
-                "-o",
-                "${workspaceFolder}/Source/lex.yy.c",
-                "${workspaceFolder}/Source/c2asm.l"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
-        },
-        {
-            "label": "generate-y-tab",
-            "type": "shell",
-            "command": "bison",
-            "args": [
-                "-y",
-                "-d",
-                "--output=${workspaceFolder}/Source/y.tab.c",
-                "--defines=${workspaceFolder}/Headers/y.tab.h",
-                "${workspaceFolder}/Source/c2asm.y"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-<<<<<<< HEAD
             }
         },
         {
@@ -147,28 +54,12 @@
                 "env": {
                     "SLEEP_SECONDS": "2"
                 }
-=======
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
-        },
-        {
-            "label": "build-with-make",
-            "type": "shell",
-            "command": "make",
-            "args": [],
-            "options": {
-                "cwd": "${workspaceFolder}/.vscode"
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "presentation": {
-<<<<<<< HEAD
                 "echo": true,
                 "reveal": "always",
                 "focus": false,
@@ -190,11 +81,3 @@
         }
     ]
 }
-=======
-                "reveal": "always",
-                "panel": "new"
-            }
-        }
-    ]
-}
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce

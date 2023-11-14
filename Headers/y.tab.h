@@ -74,45 +74,6 @@
      NORM = 291
    };
 #endif
-<<<<<<< HEAD
-=======
-/* Tokens.  */
-#define PRNAME 258
-#define DIRNAM 259
-#define DATYPE 260
-#define NUBITS 261
-#define NBMANT 262
-#define NBEXPO 263
-#define NDSTAC 264
-#define SDEPTH 265
-#define NUIOIN 266
-#define NUIOOU 267
-#define NUGAIN 268
-#define TYPE 269
-#define INUM 270
-#define FNUM 271
-#define ID 272
-#define STRING 273
-#define IN 274
-#define OUT 275
-#define ABS 276
-#define SIGN 277
-#define RETURN 278
-#define WHILE 279
-#define IF 280
-#define ELSE 281
-#define SHIFTL 282
-#define SHIFTR 283
-#define SSHIFTR 284
-#define GREQU 285
-#define LESEQ 286
-#define EQU 287
-#define DIF 288
-#define LAND 289
-#define LOR 290
-#define NORM 291
-
->>>>>>> eaec011f43a5b130c4c5ba88a5a9b7c53c35c6ce
 
 
 
