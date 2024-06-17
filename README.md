@@ -1,6 +1,6 @@
 # Möbius: A C Compiler for the C+- Language
 
-![Möbius Strip](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/M%C3%B6bius_strip.jpg/320px-M%C3%B6bius_strip.jpg)
+![Möbius Strip]([https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/M%C3%B6bius_strip.jpg/320px-M%C3%B6bius_strip.jpg](https://github.com/Chrysthofer/Mobius/blob/main/Mobius_Strip.png))
 *Image source: Wikimedia Commons*
 
 ## Overview
